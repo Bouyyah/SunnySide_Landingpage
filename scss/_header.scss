@@ -2,19 +2,40 @@
     position: relative;
     
 
-    &-img{
-        height: 90vh;
-    }
-
     &-textarrow{
         position: absolute;
         z-index: 8; 
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-75%);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        gap: 10rem;
+        width: max-content;
+        &-text{
+            font-family: "Fraunces", sans-serif;
+            font-size: 7rem;
+            font-weight: 900;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            color: $white;
+            
+        }
+    }
+}
+
+@media (max-width:375px){
+    .header{
+        &-textarrow{
+            width: auto;
+            transform: translate(-50%,-55%);
+            gap: 5rem;
+            &-text{
+                font-size: 4rem;
+                text-align: center;
+            }
+        }
     }
 }
