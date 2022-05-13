@@ -19,12 +19,6 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -40,6 +34,10 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -70,4 +68,81 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  gap: 4rem;
+}
+
+.navbar ul a {
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+
+.navbar ul .navbar-contact {
+  font-family: "Fraunces", sans-serif;
+  color: #23303e;
+  background-color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 6rem;
+  font-size: 2rem;
+}
+
+.navbar ul .navbar-contact:hover {
+  background-color: cyan;
+  color: white;
+}
+
+@media (max-width: 375px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
+.header {
+  position: relative;
+}
+
+.header-img {
+  height: 90vh;
+}
+
+.header-textarrow {
+  position: absolute;
+  z-index: 8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+main {
+  position: relative;
+  width: 100vw;
 }

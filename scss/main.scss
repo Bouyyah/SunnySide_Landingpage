@@ -1,1 +1,18 @@
 @import "reset";
+@import "variables";
+@import "navbar";
+@import "header";
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+}
