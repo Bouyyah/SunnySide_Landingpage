@@ -19,3 +19,7 @@ main{
     position: relative;
     
 }
+
+img:not(.auto-width){
+width: 100%;
+}

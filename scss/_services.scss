@@ -4,6 +4,14 @@
 
   &-block {
     height: max-content;
+    width: 100%;
+
+    &-image {
+        img{
+            width: 100%;
+
+        }
+    }
     &-title {
       font-family: "Fraunces", sans-serif;
       font-weight: 900;
@@ -103,6 +111,27 @@
     }
     .grid-order-6{
         order: 6;
+    }
+
+    &-block-paragraph {
+        position: absolute;
+        text-align: center;
+        width: 90%;
+        transform: translate(5%, -150%);
+
+      .paragraph-title {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        color: $veryDarkDesaturatedCyan;
+        opacity: 0.8;
+      }
+
+      .paragraph-text {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $veryDarkDesaturatedCyan;
+        opacity: 0.9;
+      }
     }
   }
 

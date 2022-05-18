@@ -160,6 +160,11 @@ select {
 
 .services-block {
   height: max-content;
+  width: 100%;
+}
+
+.services-block-image img {
+  width: 100%;
 }
 
 .services-block-title {
@@ -260,6 +265,24 @@ select {
   .services .grid-order-6 {
     order: 6;
   }
+  .services-block-paragraph {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    transform: translate(5%, -150%);
+  }
+  .services-block-paragraph .paragraph-title {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    color: #23303e;
+    opacity: 0.8;
+  }
+  .services-block-paragraph .paragraph-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #23303e;
+    opacity: 0.9;
+  }
 }
 
 html {
@@ -273,4 +296,8 @@ body {
 
 main {
   position: relative;
+}
+
+img:not(.auto-width) {
+  width: 100%;
 }
