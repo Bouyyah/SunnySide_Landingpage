@@ -3,8 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
 
   &-block {
-    
-
+    height: max-content;
     &-title {
       font-family: "Fraunces", sans-serif;
       font-weight: 900;
@@ -14,7 +13,7 @@
 
     &-text {
       font-family: "Barlow", sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 400;
       color: $darkGreyishBlue;
     }
@@ -27,7 +26,7 @@
         position: relative;
         font-family: "Fraunces", sans-serif;
         font-weight: 900;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         z-index: 10;
       }
@@ -35,10 +34,10 @@
       &-line {
         position: absolute;
         width: 110%;
-        top: 15%;
+        top: 20%;
         transform: translateX(-5%);
         border-radius: 5rem;
-        opacity:.5;
+        opacity: 0.5;
         z-index: 5;
       }
 
@@ -52,15 +51,35 @@
         border: solid 4.5px $softRed;
       }
     }
+
+    &-paragraph {
+      position: relative;
+      text-align: center;
+      width: 55%;
+      left: 50%;
+      transform: translate(-50%, -150%);
+
+      .paragraph-title {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        color: $veryDarkDesaturatedCyan;
+        opacity: 0.8;
+      }
+
+      .paragraph-text {
+        color: $veryDarkDesaturatedCyan;
+        opacity: 0.8;
+      }
+    }
   }
 
   & .fulltext {
-    padding: 5%;
-    width: 70%;
-    margin: 15% 10%;
+    padding: 2%;
+    width: 80%;
+    margin: 20% 10%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2.5rem;
+    grid-gap: 3.5rem;
   }
 }
 
