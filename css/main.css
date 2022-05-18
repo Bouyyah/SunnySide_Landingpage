@@ -211,11 +211,10 @@ select {
 }
 
 .services-block-paragraph {
-  position: relative;
+  position: absolute;
   text-align: center;
-  width: 55%;
-  left: 50%;
-  transform: translate(-50%, -150%);
+  width: 28%;
+  transform: translate(35%, -150%);
 }
 
 .services-block-paragraph .paragraph-title {
@@ -242,6 +241,24 @@ select {
 @media (max-width: 375px) {
   .services {
     grid-template-columns: 1fr;
+  }
+  .services .grid-order-1 {
+    order: 1;
+  }
+  .services .grid-order-2 {
+    order: 2;
+  }
+  .services .grid-order-3 {
+    order: 3;
+  }
+  .services .grid-order-4 {
+    order: 4;
+  }
+  .services .grid-order-5 {
+    order: 5;
+  }
+  .services .grid-order-6 {
+    order: 6;
   }
 }
 

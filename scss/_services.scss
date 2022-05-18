@@ -53,11 +53,10 @@
     }
 
     &-paragraph {
-      position: relative;
-      text-align: center;
-      width: 55%;
-      left: 50%;
-      transform: translate(-50%, -150%);
+        position: absolute;
+        text-align: center;
+        width: 28%;
+        transform: translate(35%, -150%);
 
       .paragraph-title {
         font-size: 3rem;
@@ -86,5 +85,25 @@
 @media (max-width: 375px) {
   .services {
     grid-template-columns: 1fr;
+
+    .grid-order-1{
+        order: 1;
+    }
+    .grid-order-2{
+        order: 2;
+    }
+    .grid-order-3{
+        order: 3;
+    }
+    .grid-order-4{
+        order: 4;
+    }
+    .grid-order-5{
+        order: 5;
+    }
+    .grid-order-6{
+        order: 6;
+    }
   }
+
 }
