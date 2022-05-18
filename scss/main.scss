@@ -3,6 +3,8 @@
 @import "navbar";
 @import "header";
 @import "services";
+@import "testimonials";
+
 
 
 
@@ -17,7 +19,7 @@ body{
 
 main{
     position: relative;
-    
+    background-color: $verySoftRed;
 }
 
 img:not(.auto-width){
