@@ -5,6 +5,8 @@
 @import "services";
 @import "testimonials";
 @import "gallery";
+@import "footer";
+
 
 
 
@@ -24,4 +26,8 @@ main{
 
 img:not(.auto-width){
 width: 100%;
+}
+
+ul{
+    list-style: none;
 }
