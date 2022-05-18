@@ -344,6 +344,30 @@ select {
   color: #a7abae;
 }
 
+@media (max-width: 375px) {
+  .testimonials {
+    padding: 5rem 0;
+  }
+  .testimonials-title {
+    font-size: 1.6rem;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 7rem;
+  }
+  .testimonials-grid-section {
+    gap: 3.5rem;
+  }
+  .testimonials-grid-section-image {
+    width: 25%;
+  }
+  .testimonials-grid-section-text {
+    font-weight: 800;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+}
+
 html {
   font-size: 62.5%;
 }

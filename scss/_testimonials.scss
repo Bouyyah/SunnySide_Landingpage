@@ -55,3 +55,29 @@
     }
   }
 }
+
+@media (max-width: 375px){
+    .testimonials{
+        padding: 5rem 0;
+        &-title{
+            font-size: 1.6rem;
+        }
+       &-grid{
+        grid-template-columns: 1fr;
+        gap: 7rem;
+        &-section{
+            gap: 3.5rem;
+
+            &-image{
+                width: 25%;
+            }
+
+            &-text {
+                font-weight: 800;
+                font-size: 1.75rem;
+                line-height: 1.5;
+              }
+        }
+       }
+    }
+}
