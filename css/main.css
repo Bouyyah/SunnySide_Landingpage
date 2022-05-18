@@ -76,7 +76,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 1.5rem 3rem;
   z-index: 10;
 }
 
@@ -134,7 +134,7 @@ select {
 
 .header-textarrow-text {
   font-family: "Fraunces", sans-serif;
-  font-size: 7rem;
+  font-size: 5.5rem;
   font-weight: 900;
   letter-spacing: 1rem;
   text-transform: uppercase;
@@ -150,6 +150,74 @@ select {
   .header-textarrow-text {
     font-size: 4rem;
     text-align: center;
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services-block-title {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.services-block-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #818498;
+}
+
+.services-block-link {
+  width: fit-content;
+  position: relative;
+}
+
+.services-block-link-text {
+  position: relative;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.services-block-link-line {
+  position: absolute;
+  width: 110%;
+  top: 15%;
+  transform: translateX(-5%);
+  border-radius: 5rem;
+  opacity: .5;
+  z-index: 5;
+}
+
+.services-block-link .yellowbottom {
+  background-color: #fad400;
+  border: solid 4.5px #fad400;
+}
+
+.services-block-link .pinkbottom {
+  background-color: #fe7867;
+  border: solid 4.5px #fe7867;
+}
+
+.services .fulltext {
+  padding: 5%;
+  width: 70%;
+  margin: 15% 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+}
+
+@media (max-width: 375px) {
+  .services {
+    grid-template-columns: 1fr;
   }
 }
 
