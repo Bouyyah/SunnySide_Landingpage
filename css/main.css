@@ -368,6 +368,17 @@ select {
   }
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 375px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
