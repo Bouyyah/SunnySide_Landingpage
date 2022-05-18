@@ -108,7 +108,7 @@ select {
   color: white;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .navbar ul {
     display: none;
   }
@@ -141,7 +141,7 @@ select {
   color: white;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .header-textarrow {
     width: auto;
     transform: translate(-50%, -55%);
@@ -243,7 +243,7 @@ select {
   grid-gap: 3.5rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .services {
     grid-template-columns: 1fr;
   }
@@ -344,7 +344,7 @@ select {
   color: #a7abae;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .testimonials {
     padding: 6rem 0 9rem 0;
     gap: 6rem;
@@ -374,7 +374,7 @@ select {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
@@ -413,7 +413,7 @@ select {
   gap: 3rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .footer {
     padding: 6rem;
   }
